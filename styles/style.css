@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lobster&display=swap');
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align:center;
+    color:#000;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    background-color: #ffadad;
+    color:#9bf6ff;
+}
+
+#logo-link{
+    width: 100px;
+    height: auto;
+}
+
+.bannergrid{
+    display: grid;
+    grid-template: 100px / 1fr 1fr 1fr;
+}
+
+.logo{
+    width: 100px;
+    height:auto;
+}
+
+.banner{
+    width: 1419px;
+    height: 100px;
+    grid-column: 2/3;
+}
+
+body {
+    background-color: #a0c4ff;
+    font-family: 'Gideon Roman', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.h1{
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    color: #9bf6ff;
+    font-size: 35px;
+}
+
+.homegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.gummy_bear_card{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-right: 15px;
+}
+
+.card_img1{
+    width: 100%;
+    height: auto;
+}
+
+.controller_card{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.card_img2{
+    width: 100%;
+    height: auto;
+}
+
+.insta{
+    width: 100px;
+    height: auto;
+}
+
+.venmo{
+    width:100px;
+    height:auto;
+}
+
+footer {
+    background-color: #bdb2ff;
+    color: #1d3557;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+footer h3 {
+    color:#000;
+    text-decoration: underline;
+}
+
+footer a {
+    color:#1d3557;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#9bf6ff;
+    text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
+    padding-right:15px;
+}

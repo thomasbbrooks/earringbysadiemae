@@ -25,7 +25,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
-        <a href="checkout.html">Contact Us</a>
+        <a href="checkout.php">Contact Us</a>
       </nav>
 
     </header>
@@ -57,7 +57,7 @@
     <footer>
       <h3>Earrings By Sadie Mae 2022</h3>
       <h3><a href="site-plan.html">Site Plan</a></h3>
-      <h3><a href="checkout.html">Back to Top</a></h3>
+      <h3><a href="checkout.php">Back to Top</a></h3>
       <div class="social">
           <a href="https://www.instagram.com/earrings_by_sadiemae/" target="_blank">
               <img src="Images/instagram.png" alt="instagram icon">

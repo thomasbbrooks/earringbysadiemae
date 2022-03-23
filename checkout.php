@@ -11,10 +11,17 @@
 <body>
   <div id="content">
     <header>
+      <div class="bannergrid">
       <a id="logo_link" href="index.html">
         <img class="logo" src="Images/logo_official.png" alt="Official Logo">
       </a>
+      <img class="banner" src="Images/banner.jpg" alt="banner">
+     </div>
 
+     <section class="h1">
+      <h1>Earrings By Sadie Mae</h1>
+    </section>
+    
       <nav>
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
@@ -31,26 +38,13 @@
       
       
       <section>
-        <form action="mailto:wilsonsadiemae@gmail.com" method="post" enctype="text/plain">
-          <ul>
-           <li>
-             <label for="name">Name:</label>
-             <input type="text" id="name" name="user_name">
-           </li>
-           <li>
-             <label for="mail">E-mail:</label>
-             <input type="email" id="mail" name="user_email">
-           </li>
-           <li>
-             <label for="number">Phone Number:</label>
-             <input type="text" id="mail" name="user_number">
-           </li>
-           <li>
-             <label for="msg">Message:</label>
-             <textarea id="msg" name="user_message"></textarea>
-           </li>
-          </ul>
-         </form>
+        <form class="contact-form" action="form.php" method="post">
+         <input type="text" name="name" placeholder="Full Name"><br>
+         <input type="text" name="mail" placeholder="You Email"><br>
+         <input type="text" name="subject" placeholder="Subject"><br>
+         <textarea name="message" placeholder="Message"></textarea><br>
+         <button type="submit" name="submit">Send Mail</button>
+          </form>
       </section>
 
       <section class="controller-card">
@@ -75,20 +69,7 @@
     </footer>
   </div>
 
-  <script>
-    const feedbackElement = document.getElementById('feedback');
 
-    const formElement = document.forms[0];
-
-    formElement.addEventListener('submit', function(e) {
-     e.preventDefault();
-        
-   feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-
-   feedbackElement.style.display = "block";
-   document.body.classList.toggle('moveDown');
-    });
-</script>
 
 </body>
 </html>

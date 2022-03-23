@@ -15,6 +15,7 @@ nav a {
 nav {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 
 nav a:hover {

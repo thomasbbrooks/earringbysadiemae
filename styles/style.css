@@ -12,6 +12,31 @@ nav a {
     padding: 35px;
 }
 
+.bg-img {
+    /* The image used */
+    background-image: url("banner.jpg");
+    min-width:1419px;
+    height: 100px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+        
+
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -20,7 +45,7 @@ nav {
 
 nav a:hover {
     background-color: #ffadad;
-    color:#9bf6ff;
+    color:green;
 }
 
 #logo-link{

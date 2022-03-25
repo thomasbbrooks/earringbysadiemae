@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="javascript.js"></script>
+  <link rel="stylesheet" href="styles/style4product.css">
   <title>Earrings By Sadie Mae</title>
 </head>
 <body>
@@ -15,57 +14,153 @@
       <a id="logo_link" href="index.html">
         <img class="logo" src="Images/logo_official.png" alt="Official Logo">
       </a>
-      <img class="banner" src="Images/banner.jpg" alt="banner">
-     </div>
-
-     <section class="h1">
-      <h1>Earrings By Sadie Mae</h1>
-    </section>
-    
+  
+     <div class="bg-img">
       <nav>
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
         <a href="checkout.html">Contact Us</a>
       </nav>
-
+      </div>
+      </div>
+     <section class="h1">
+      <h1>Earrings By Sadie Mae</h1>
+    </section>
+    
     </header>
   
     <main>
-      <section>
-        <h1>Products</h1>
-      </section>
-
-      <section class="alien-ufo">
-        <img class="card-img" src="Images/alien_with_ufo.JPG" alt="Gummy Bear Earrings">
-      </section>
       
-      <section class="alien">
-        <img class="card-img" src="Images/alien.JPG" alt="Alien Earrings">
-      </section>
+      <div class="row">
+        <div class="column1">
+          <img src="Images/alien_with_ufo.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:50%">
+          <p>Aliens with UFOs</p>
+        </div>
+        <div class="column2">
+          <img src="Images/alien.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:50%">
+          <p>Aliens</p>
+        </div>
+        <div class="column3">
+          <img src="Images/controller.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:50%">
+          <p>Controllers</p>
+        </div>
+        <div class="column4">
+          <img src="Images/cow_ufo.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:50%">
+          <p>Cows with UFOs</p>
+        </div>
+        <div class="column1">
+          <img src="Images/ducks.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow" style="width:50%">
+          <p>Ducks</p>
+        </div>
+        <div class="column2">
+          <img src="Images/gummy_bears.JPG" onclick="openModal();currentSlide(6)" class="hover-shadow" style="width:50%">
+          <p>Gummy Bears</p>
+        </div>
+        <div class="column3">
+          <img src="Images/lollipops.JPG" onclick="openModal();currentSlide(7)" class="hover-shadow" style="width:50%">
+          <p>Lollipops</p>
+        </div>
+        <div class="column4">
+          <img src="Images/milkshake.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow" style="width:50%">
+          <p>Milkshakes</p>
+        </div>
+      </div>
+     
 
-      <section class="controller">
-        <img class="card-img" src="Images/controller.JPG" alt="Controller Earrings">
-      </section>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
       
-      <section class="cow-ufo">
-        <img class="card-img" src="Images/cow_ufo.JPG" alt="Cow ufo Earrings">
-      </section>
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="Images/alien_with_ufo.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="Images/alien.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="Images/controller.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="Images/cow_ufo.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="Images/ducks.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="Images/gummy_bears.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="Images/lollipops.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="Images/milkshake.JPG" style="width:100%">
+          </div>
 
-      <section class="ducks">
-        <img class="card-img" src="Images/ducks.JPG" alt="Ducks Earrings">
-      </section>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+         
+        </div>
+      </div>
 
-      <section class="gummy-bears">
-        <img class="card-img" src="Images/gummy_bears.JPG" alt="Gummy Bears Earrings">
-      </section>
-
-      <section class="lollipops">
-        <img class="card-img" src="Images/lollipops.JPG" alt="lollipops Earrings">
-      </section>
-
-      <section class="milkshake">
-        <img class="card-img" src="Images/milkshake.JPG" alt="Milkshake Earrings">
-      </section>
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
 
     </main>
   
@@ -76,10 +171,10 @@
       <h3><a href="product.html">Back to Top</a></h3>
       <div class="social">
           <a href="https://www.instagram.com/earrings_by_sadiemae/" target="_blank">
-              <img src="Images/instagram.png" alt="instagram icon">
+              <img src="Images/instagram.png" class="insta" alt="instagram icon">
           </a>
           <a href="https://account.venmo.com/u/Sadie-Wilson-32" target="_blank"> 
-              <img src="Images/venmo.png" alt="venmo icon">
+              <img src="Images/venmo.png" class="venmo" alt="venmo icon">
           </a>
       </div>
     </footer>

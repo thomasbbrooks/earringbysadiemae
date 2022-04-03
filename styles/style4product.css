@@ -14,9 +14,8 @@ nav a {
  
 .bg-img {
     /* The image used */
-    background-image: url("banner.jpg");
-    min-width:1419px;
-    height: 100px;
+    width:100%;
+    height: 100%;
   
     /* Center and scale the image nicely */
     background-position: center;
